@@ -1,4 +1,4 @@
 eggs
-milk
+milk = 1g
 flour
 chocolate
