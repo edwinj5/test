@@ -29,10 +29,11 @@ install:
     - conda env create -q -n test-environment python=$TRAVIS_PYTHON_VERSION --file environment.yml
     - conda activate test-environment
     - conda install --yes coverage coveralls flake8
+    - pip install coveralls
 
 # a list of commands to run before the main script
 before_script:
-    - flake8 codebase
+    - flake8 test
 
 # the actual commands to run
 script:
